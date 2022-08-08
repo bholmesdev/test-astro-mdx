@@ -1,0 +1,5 @@
+---
+const posts = await Astro.glob('./*.mdx');
+---
+
+{posts.map(Post => <Post.default />)}
